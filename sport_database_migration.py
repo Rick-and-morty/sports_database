@@ -33,7 +33,7 @@ with open("sport_stats.csv") as open_file:
     for row in stats:
         cursor.execute("insert into sport_database values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);",
             (row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9],
-            row[10], row[11]))
+             row[10], row[11]))
 
 
 link.commit()
